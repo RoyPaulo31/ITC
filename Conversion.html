@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Converter</title>
+    <link rel="stylesheet" href="css/conversion.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+     <header>
+        <div class="container">
+            <nav class="menu sticky-header" id="menunav">
+                <!-- Hamburger Menu -->
+                <div class="hamburger-menu" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!-- Navigation Links -->
+                <ul id="nav-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./projects.html">Assignments</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Simple Converter</h1>
+        <form>
+            <p>
+                <label for="choice" id="choiceLabel">Choose Conversion Type:</label>
+                <select name="choice" id="choice">
+                    <option value="1">Fahrenheit to Celsius</option>
+                    <option value="2">Celsius to Fahrenheit</option>
+                    <option value="3">Meter to Feet</option>
+                    <option value="4">Feet to Meters</option>
+                </select>
+            </p>
+            <p>
+                <label for="num" id="numLabel">Number to be converted:</label>
+                <input type="number" id="num" name="num">
+            </p>
+            <p>
+                <button type="button" id="converbtn">Convert</button>
+            </p>
+            <p>
+                <label for="convertedVal" id="convertLabel">The Converted Value is:</label>
+                <input id="convertedVal" name="convertedVal" type="number" readonly>
+            </p>
+        </form>
+    </main>
+
+
+
+    <script src="Script/Conversion.js"></script>
+</body>
+</html>
