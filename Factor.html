@@ -1,0 +1,60 @@
+   <!DOCTYPE html>
+  <html lang = "en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Factorial Sum Average</title>
+
+  <link rel="stylesheet" href="css/factSumAvg.css">
+
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+     <header>
+        <div class="container">
+            <nav class="menu sticky-header" id="menunav">
+                <!-- Hamburger Menu -->
+                <div class="hamburger-menu" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!-- Navigation Links -->
+                <ul id="nav-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./projects.html">Assignments</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    <h1>Factorial Sum Average</h1>
+    <form>
+      <p>
+          <label for="nnumber" id="nnumberLabel">Input Number:</label>
+          <input type="number" id="nnumber" name="nnumber">
+          <button type="button" id="fsaBtn">Equate</button>
+      </p>
+
+    </form>
+    <br>
+    <div class="results">
+      <h2> Results </h2>
+      <label for="factorResult" id="factorLabel">Factorial:</label> 
+        <input type="number" id="factorResult" name="factorResult" readonly><br>
+      <label for="summationResult" id="summationLabel">Summation:</label>
+        <input type="number" id="summationResult" name="summationResult" readonly><br>
+      <label for="avgResult" id="avgLabel">Average:</label>
+        <input type="number" id="avgResult" name="avgResult" readonly><br>
+    </div>
+    </main>
+
+
+
+    <script src="Script/nFactSumAvg.js"></script>
+
+    
+  </body>
+  </html>
