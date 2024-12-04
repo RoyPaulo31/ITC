@@ -1,0 +1,45 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Income Tax Calculator</title>
+
+  <link rel="stylesheet" href="css/incometax.css">
+
+  </head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="menu sticky-header" id="menunav">
+            <!-- Hamburger Menu -->
+            <div class="hamburger-menu" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- Navigation Links -->
+            <ul id="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./projects.html">Assignments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Income Tax Calculator</h1>
+        <form>
+            <p>
+                <label for="userNumber" id="userLabel">Input your income: </label>
+                <input type="number" id="userNumber" name="userNumber">
+            </p>
+            <p>
+                <label for="taxedIncome" id="taxedLabel">Income Tax:</label>
+                <input id="taxedIncome" name="taxedIncome" type="number" readonly>
+            </p>
+        </form>
+    </main>
+
+    <script src="Script/InComeTax.js"></script>
+</body>
